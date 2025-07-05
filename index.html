@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="shortcut icon" href="./assests/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Initial screen with welcome message and animated button -->
+    <div class="initial-screen" id="initialScreen">
+        <h1 class="welcome-text">Welcome To Digital World!</h1>
+        <div class="click-prompt">
+            <button id="helloButton" class="animated-button" aria-label="Click to say hello">
+                <h3>Say Hello</h3>
+            </button>
+        </div>
+    </div>
+
+    <!-- Digital world screen, initially hidden -->
+    <div class="digital-world-screen" id="digitalWorldScreen" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="binary-stream"></div>
+        <span id="hello-world-text">Hello World
+            <span>
+                <div class="dot" id="first">.</div>
+                <div class="dot" id="second">.</div>
+                <div class="dot" id="third">.</div>
+            </span>
+        </span>
+
+        <video src="./assests/earth.mp4" id="imag" autoplay loop muted playsinline></video>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
