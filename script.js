@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dot = document.getElementById('dot');
     // Add an event listener to the button
     helloButton.addEventListener('click', () => {
+        imag.load();
+        imag.play();
 
         // 1. Start the transition to hide the initial screen.
         initialScreen.classList.add('hidden');
@@ -17,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         imag.style.cssText = "scale:1";
         // word.style.scale = '3';
         word.style.fontSize = '10vw';
-        // imag.load();
-        // imag.play();
 
 
 
