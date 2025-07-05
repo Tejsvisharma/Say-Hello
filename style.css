@@ -89,6 +89,8 @@ body {
 }
 
 .welcome-text {
+    width: 100%;
+    text-align: center;
     color: white;
     text-shadow: 0px 0px 12px rgb(229, 255, 0);
 }
@@ -106,6 +108,10 @@ body {
     z-index: 1;
     background-image: linear-gradient(160deg, #383232 30%, #000000);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #imag {
@@ -122,15 +128,14 @@ body {
 }
 
 #hello-world-text {
-    position: absolute;
-    top: 49%;
-    left: 47%;
-    scale: 0%;
+
+    width: 100%;
+    text-align: center;
+    scale: 1;
     transition: 2s;
     font-style: italic;
     font-weight: bolder;
     user-select: none;
-    display: inline-flex;
     background-image: linear-gradient(135deg, #f80707e3, #a0398a);
     background-clip: text;
     color: transparent;
@@ -161,7 +166,7 @@ body {
     0% {
         transform: scale(0.5);
         opacity: 0.2;
-        text-shadow: 0px 0px 1px rgba(252, 0, 0, 0.555);
+        text-shadow: 0px 0px 5px rgba(252, 0, 0, 0.555);
     }
 
     50% {
@@ -172,13 +177,8 @@ body {
     100% {
         transform: scale(0.5);
         opacity: 0.2;
-        text-shadow: 0px 0px 2px rgb(255, 0, 212);
+        text-shadow: 0px 0px 5px rgb(255, 0, 212);
     }
-}
-
-
-#hello-world-text:hover {
-    scale: 5;
 }
 
 .digital-world-screen.active {
