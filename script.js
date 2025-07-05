@@ -15,15 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
         initialScreen.style.setProperty("opacity", 0);
         initialScreen.setAttribute('aria-hidden', 'true');
         imag.style.cssText = "scale:1";
-        imag.playbackRate = 0.5;
-        word.style.cssText = "scale:5;";
+        // word.style.scale = '3';
+        word.style.fontSize = '10vw';
         // imag.load();
         // imag.play();
-        // dot.style.cssText= "z-index: 1;"; 
+
 
 
         // 3. Activate the digital world screen.
         digitalWorldScreen.classList.add('active');
         digitalWorldScreen.setAttribute('aria-hidden', 'false');
+        imag.playbackRate = 0.5;
     });
 });
